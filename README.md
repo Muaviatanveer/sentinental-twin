@@ -1,16 +1,14 @@
 <div align="center">
 
-<!-- HERO BANNER -->
-<img src="docs/images/hero-banner.jpg" alt="NeuroSyn Sentinel Twin — AI-Powered Infrastructure Security Digital Twin" width="100%"/>
-
-<br/>
-
-<!-- ANIMATED LOGO -->
-<img src="docs/images/sentinel-logo.png" alt="Sentinel Twin Logo" width="120"/>
+<!-- LOGO -->
+<img src="docs/images/sentinel-logo.png" alt="NeuroSyn Sentinel Twin Logo" width="135"/>
 
 # 🛡️ NeuroSyn Sentinel Twin
 
-### *Test Tomorrow's Infrastructure Decisions Today.*
+<!-- ANIMATED TYPING HEADER -->
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&duration=2800&pause=1000&color=00D4FF&center=true&vCenter=true&multiline=false&width=780&height=48&lines=Test+Tomorrow's+Infrastructure+Decisions+Today.;Autonomous+AI+Digital+Twin+for+Container+Networks.;Powered+by+Gemma+4+Thinking+Mode+(26B+A4B+MoE).;Counterfactual+Policy+Engine+%26+Delta-G+Simulation.;Zero-Downtime+Security+Testing+in+Isolated+Docker+Sandboxes." alt="Typing SVG" />
+</a>
 
 <br/>
 
@@ -21,14 +19,15 @@
 [![Gemma 4](https://img.shields.io/badge/Gemma_4-26B_A4B_(MoE)-4285F4.svg?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/gemma)
 [![Docker](https://img.shields.io/badge/Docker-Sandbox_Runner-2496ED.svg?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
 [![NetworkX](https://img.shields.io/badge/NetworkX-Graph_Engine-FFA500.svg?style=for-the-badge&logo=python&logoColor=white)](https://networkx.org)
+[![Verified in Sandbox](https://img.shields.io/badge/Sandbox-Live%20Verified-00E5FF.svg?style=for-the-badge&logo=checkmarx&logoColor=white)](https://github.com/Muaviatanveer/sentinental-twin)
 
-<br/>
+<br/><br/>
 
 > 🧬 **An AI-native digital twin for container infrastructure that models multi-relationship network topology, predicts security blast radius using Gemma 4 Thinking Mode, and verifies counterfactual reachability policies in disposable, isolated Docker sandboxes.**
 
 <br/>
 
-[🚀 Quick Start](#-quickstart) · [📖 How It Works](#-how-it-works) · [🎯 Demo Fixtures](#-live-hackathon-demonstration-fixtures) · [🧪 Tests](#-automated-qa-suite) · [📄 License](#-license)
+[🚀 Quick Start](#-quickstart) · [📖 How It Works](#-how-it-works) · [🎯 Demo Fixtures](#-live-hackathon-demonstration-fixtures) · [🧪 Tests](#-automated-qa-suite) · [👥 Contributors](#-core-contributors--team) · [📄 License](#-license)
 
 </div>
 
@@ -82,6 +81,16 @@
 </td>
 </tr>
 </table>
+
+<br/>
+
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=3000&pause=1200&color=10B981&center=true&vCenter=true&multiline=true&width=750&height=110&lines=%24+sentinel+twin+simulate+--config+compose.yaml;%E2%9C%94+Topology+Multi-Graph+Synthesized+(3+nodes%2C+2+isolated+networks);%E2%9C%94+Gemma+4+Thinking+Mode+Generated+Counterfactual+Policy;%E2%9C%94+Isolated+Docker+Sandbox+Verification%3A+Lateral+Exploit+BLOCKED" alt="Live CLI Simulation" />
+  </a>
+</div>
+
+<br/>
 
 ---
 
@@ -501,7 +510,66 @@ PYTHONPATH=. pytest apps/api/tests/test_sentinel_suite.py -v -k "Level1"
 
 ---
 
+## 👥 Core Contributors & Team
+
+Meet the minds behind **NeuroSyn Sentinel Twin**:
+
+<div align="center">
+<table>
+  <tr>
+    <td align="center" width="240px">
+      <a href="https://github.com/Muaviatanveer">
+        <img src="https://github.com/Muaviatanveer.png" width="105px;" style="border-radius: 50%; border: 2px solid #00D4FF;" alt="Muavia Tanveer"/><br />
+        <br />
+        <b>Muavia Tanveer</b>
+      </a><br />
+      <sub><a href="https://github.com/Muaviatanveer">@Muaviatanveer</a></sub><br /><br />
+      <img src="https://img.shields.io/badge/Role-Lead%20Architect-00D4FF?style=flat-square" alt="Lead Architect"/><br />
+      <sub>Project Lead · Core Twin Engine · Gemma 4 Adapter</sub><br /><br />
+      <a href="https://github.com/Muaviatanveer" title="Code">💻</a> 
+      <a href="https://github.com/Muaviatanveer" title="Architecture">📐</a> 
+      <a href="https://github.com/Muaviatanveer" title="Research">🔬</a>
+      <a href="https://github.com/Muaviatanveer" title="Docker">🐳</a>
+    </td>
+    <td align="center" width="240px">
+      <a href="https://github.com/sanakhang2006-cyber">
+        <img src="https://github.com/sanakhang2006-cyber.png" width="105px;" style="border-radius: 50%; border: 2px solid #10B981;" alt="Sana Mahmood"/><br />
+        <br />
+        <b>Sana Mahmood</b>
+      </a><br />
+      <sub><a href="https://github.com/sanakhang2006-cyber">@sanakhang2006-cyber</a></sub><br /><br />
+      <img src="https://img.shields.io/badge/Role-Security%20%26%20Policy-10B981?style=flat-square" alt="Security & Policy"/><br />
+      <sub>Policy Synthesis · Threat Modeling · QA</sub><br /><br />
+      <a href="https://github.com/sanakhang2006-cyber" title="Security">🔒</a> 
+      <a href="https://github.com/sanakhang2006-cyber" title="Research">🔬</a> 
+      <a href="https://github.com/sanakhang2006-cyber" title="Documentation">📖</a>
+      <a href="https://github.com/sanakhang2006-cyber" title="Tests">🧪</a>
+    </td>
+    <td align="center" width="240px">
+      <a href="https://github.com/MaryamArif17">
+        <img src="https://github.com/MaryamArif17.png" width="105px;" style="border-radius: 50%; border: 2px solid #A78BFA;" alt="Maryam Arif"/><br />
+        <br />
+        <b>Maryam Arif</b>
+      </a><br />
+      <sub><a href="https://github.com/MaryamArif17">@MaryamArif17</a></sub><br /><br />
+      <img src="https://img.shields.io/badge/Role-Frontend%20%26%20UX-A78BFA?style=flat-square" alt="Frontend & UX"/><br />
+      <sub>Next.js Workspace · Interactive Graph UX · Design</sub><br /><br />
+      <a href="https://github.com/MaryamArif17" title="Frontend">💻</a> 
+      <a href="https://github.com/MaryamArif17" title="Design">✨</a> 
+      <a href="https://github.com/MaryamArif17" title="Review">👀</a>
+      <a href="https://github.com/MaryamArif17" title="Testing">🧪</a>
+    </td>
+  </tr>
+</table>
+</div>
+
+<br/>
+
+---
+
 ## 🏗️ Contributing
+
+We welcome contributions! Please see our guidelines below:
 
 ```bash
 # 1. Fork the repository
@@ -521,6 +589,8 @@ git push origin feature/amazing-feature
 
 ## 📄 License
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24,30&height=90&section=footer" width="100%"/>
+
 <div align="center">
 
 **Apache License 2.0**
@@ -531,6 +601,6 @@ Powered by [Gemma 4](https://ai.google.dev/gemma) · [FastAPI](https://fastapi.t
 
 ---
 
-<sub>Made by <a href="https://github.com/Muaviatanveer">@Muaviatanveer</a></sub>
+<sub>Crafted with 🛡️ by <a href="https://github.com/Muaviatanveer">@Muaviatanveer</a>, <a href="https://github.com/sanakhang2006-cyber">@sanakhang2006-cyber</a>, and <a href="https://github.com/MaryamArif17">@MaryamArif17</a></sub>
 
 </div>
