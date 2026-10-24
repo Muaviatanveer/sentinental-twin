@@ -7,8 +7,7 @@ export const metadata: Metadata = {
     description: "Test security and infrastructure decisions against a digital twin before applying them.",
     icons: {
         icon: [
-            { url: "/favicon.svg", type: "image/svg+xml" },
-            { url: "/favicon.jpg", type: "image/jpeg" },
+            { url: "/favicon.png", type: "image/png" },
         ],
     },
 };

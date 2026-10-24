@@ -6,7 +6,7 @@
 <br/>
 
 <!-- ANIMATED LOGO -->
-<img src="docs/images/sentinel-favicon.jpg" alt="Sentinel Twin Logo" width="80"/>
+<img src="docs/images/sentinel-logo.png" alt="Sentinel Twin Logo" width="120"/>
 
 # 🛡️ NeuroSyn Sentinel Twin
 
