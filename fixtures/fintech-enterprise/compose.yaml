@@ -1,0 +1,81 @@
+name: fintech-enterprise-platform
+
+services:
+  web-portal:
+    image: busybox:1.36
+    command: [ "sh", "-c", "httpd -f -p 80" ]
+    ports:
+      - "8080:80"
+    networks:
+      - public-dmz
+      - enterprise-flat-net # SECURITY FLAW: Web portal placed on internal flat network!
+    depends_on:
+      - api-gateway
+
+  api-gateway:
+    image: busybox:1.36
+    command: [ "sh", "-c", "httpd -f -p 8000" ]
+    ports:
+      - "8000:8000"
+    networks:
+      - public-dmz
+      - enterprise-flat-net
+    depends_on:
+      - auth-service
+      - order-service
+
+  auth-service:
+    image: busybox:1.36
+    command: [ "sh", "-c", "httpd -f -p 4000" ]
+    expose:
+      - "4000"
+    networks:
+      - enterprise-flat-net
+    depends_on:
+      - ledger-postgres
+      - redis-session
+
+  order-service:
+    image: busybox:1.36
+    command: [ "sh", "-c", "httpd -f -p 5000" ]
+    expose:
+      - "5000"
+    networks:
+      - enterprise-flat-net
+    depends_on:
+      - ledger-postgres
+      - payment-vault
+
+  # CRITICAL PCI-DSS ASSET: Only order-service should EVER touch this!
+  payment-vault:
+    image: busybox:1.36
+    command: [ "sh", "-c", "httpd -f -p 6000" ]
+    expose:
+      - "6000"
+    networks:
+      - enterprise-flat-net # SECURITY FLAW: Directly reachable by web-portal and api-gateway!
+
+  redis-session:
+    image: redis:7-alpine
+    command: [ "redis-server", "--protected-mode", "no" ]
+    ports:
+      - "6379:6379" # SECURITY FLAW: Redis cache port exposed to host machine!
+    networks:
+      - enterprise-flat-net
+
+  ledger-postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: ledger_admin
+      POSTGRES_PASSWORD: super_secret_bank_key
+      POSTGRES_DB: ledger
+    ports:
+      - "5432:5432" # SECURITY FLAW: Production SQL DB published to host!
+    networks:
+      - enterprise-flat-net
+
+networks:
+  public-dmz:
+    driver: bridge
+  enterprise-flat-net:
+    driver: bridge

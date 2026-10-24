@@ -1,0 +1,34 @@
+name: sample-commerce-app
+
+services:
+  frontend:
+    image: busybox:1.36
+    command: [ "sh", "-c", "httpd -f -p 3000" ]
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+    networks:
+      - app-net
+
+  api:
+    image: busybox:1.36
+    command: [ "sh", "-c", "httpd -f -p 8000" ]
+    ports:
+      - "8000:8000"
+    depends_on:
+      - database
+    networks:
+      - app-net
+
+  database:
+    image: busybox:1.36
+    command: [ "sh", "-c", "nc -lk -p 5432 -e /bin/true" ]
+    expose:
+      - "5432"
+    networks:
+      - app-net
+
+networks:
+  app-net:
+    driver: bridge

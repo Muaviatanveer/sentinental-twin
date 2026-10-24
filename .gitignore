@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.db
+*.sqlite3
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+
+# Environment & OS
+.env
+.env.local
+.DS_Store
+
+# Temporary sandbox execution dirs
+.sentinel_runs/
+.pytest_cache/
+*.tsbuildinfo
