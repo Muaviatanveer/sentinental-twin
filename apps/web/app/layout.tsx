@@ -5,6 +5,12 @@ import { AppSidebar } from "@/components/layout/AppSidebar";
 export const metadata: Metadata = {
     title: "NeuroSyn Sentinel Twin",
     description: "Test security and infrastructure decisions against a digital twin before applying them.",
+    icons: {
+        icon: [
+            { url: "/favicon.svg", type: "image/svg+xml" },
+            { url: "/favicon.jpg", type: "image/jpeg" },
+        ],
+    },
 };
 
 export default function RootLayout({
